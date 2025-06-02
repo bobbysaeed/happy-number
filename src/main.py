@@ -26,6 +26,15 @@ def happy_number(num):
 
 
 def main():
+    """
+    Main function that handles user interaction for the happy number checker.
+
+    This function:
+    1. Prompts the user to enter a number
+    2. Validates the input to ensure it's a valid integer
+    3. Checks if the number is a happy number
+    4. Displays the result to the user
+    """
     while True:
         try:
             addad = int(input("Enter a number: "))
