@@ -23,3 +23,20 @@ def happy_number(num):
         seen_nums.add(num)
         num = sum(int(digit) ** 2 for digit in str(num))
     return num == 1
+
+
+def main():
+    while True:
+        try:
+            addad = int(input("Enter a number: "))
+            break
+        except ValueError:
+            print("Please enter a valid number")
+
+    if happy_number(addad):
+        print(f"{addad} is a happy number")
+    else:
+        print(f"{addad} is NOT a happy number")
+
+if __name__ == "__main__":
+    main()
